@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit Web Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hoş Geldiniz</h1>
+            <p>Web sitemize kayıt olun ve avantajlardan faydalanın!</p>
+            <button id="openModalBtn">Kayıt Ol</button>
+        </header>
+    </div>
+
+    <!-- Kayıt Modalı -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Kayıt Ol</h2>
+            <form>
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Kaydol</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
